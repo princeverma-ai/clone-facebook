@@ -9,7 +9,7 @@ main{
 }
 #fb-icon{
     width: 2.6em;
-    
+    cursor: pointer;
 }
 *{
     margin: 0;
@@ -17,7 +17,7 @@ main{
 }
 
 .brand-div{
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     display: flex;
     align-items: center;
     width:30%;
@@ -47,6 +47,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     padding-left: 5%;
+    cursor: text;
 }
 input:focus , select{
     outline-width: 0;
@@ -64,7 +65,7 @@ input:focus , select{
 }
 .nav-div{
     width: 35%;
-    background: yellow;
+    /* background: yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -72,28 +73,40 @@ input:focus , select{
 .nav-item{
     height: 100%;
     width: 19%;
-    background-color: tomato;
+    /* background-color: tomato; */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    transition: 100ms ease-in;
     /* border-bottom: 6px solid #4287f5; */
 }
+.nav-item:hover{ 
+    border-bottom: 2px solid #4287f5;
+    
+}
+
+.nav-item:hover .bi{ 
+    transform: scale(1.1) translateY(-1px);
+    fill: #4287f5;
+}
 .bi{
-    width: 50%;
-    height: 50%;
+    width: 2em;
+    height: 2em;
+    transition: 100ms;
 }
 .button-div{
     width: 30%;
     height: 100%;
-    background-color:crimson;
+    /* background-color:crimson; */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 .btn-div{
-    width: calc(70%/4);
+    width: calc(50%/4);
     height: 100%;
-    background: darkgreen;
+    /* background: darkgreen; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -101,47 +114,67 @@ input:focus , select{
 .account-div{
     width: 30%;
     height: 100%;
-    background: rgb(43, 166, 214);
+    /* background: rgb(43, 166, 214); */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 .dp{
-  width: 60%;
-  height: 50%;
-  background: darkturquoise;
-  border-radius: 20px;
+  width: 80%;
+  height: 80%;
+  /* background: darkturquoise; */
+  border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
+.dp:hover{
+    background-color:rgb(228, 230, 235) ;
+}
 #acc-img{
-    width: 14%;
+    width: 20%;
     /* height: 35px; */
     border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+ }
+ #username{
+     font-size: large;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding-left: 5%;
  }
  .btn-cl{
-     width: 60%;
-     height: 70%;
-     background:white;
+     width: 3em;
+     height: 3em;
+     background-color: rgb(228, 230, 235);
      border: none;
      border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
      
+ }
+ .btn-cl:hover{
+    background-color: rgb(211, 213, 218);
+
  }
  #main1{
    width: 25%;
    height: 81vh;
-   background:chartreuse ;
+   /* background:chartreuse ; */
  }
  #main2{
      width: 50%;
     height: 81vh;
-    background: chocolate;
+    /* background: chocolate; */
 }
 #main3{
     width: 25%;
     height: 81vh;
-    background: cornflowerblue;
+    /* background: cornflowerblue; */
 }
 
