@@ -6,6 +6,7 @@ main{
     display: flex;
     position: relative;
     top:9vh;
+    justify-content: space-between;
 }
 #fb-icon{
     width: 2.6em;
@@ -22,6 +23,7 @@ main{
     align-items: center;
     width:30%;
     justify-content: flex-start;
+    padding-left: 10px;
 }
 header{
     width: 99vw;
@@ -64,7 +66,7 @@ input:focus , select{
     padding-left: 5%;
 }
 .nav-div{
-    width: 35%;
+    width: 40%;
     /* background: yellow; */
     display: flex;
     flex-direction: row;
@@ -82,8 +84,7 @@ input:focus , select{
     /* border-bottom: 6px solid #4287f5; */
 }
 .nav-item:hover{ 
-    border-bottom: 2px solid #4287f5;
-    
+    border-bottom: 2px solid #4287f5;   
 }
 
 .nav-item:hover .bi{ 
@@ -121,16 +122,19 @@ input:focus , select{
 }
 
 .dp{
-  width: 80%;
-  height: 80%;
-  /* background: darkturquoise; */
-  border-bottom-left-radius: 50px;
+    width: 80%;
+    height: 80%;
+    /* background: darkturquoise; */
+    border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    /* add by molik */
+    padding: 0px 6px;
 }
 .dp:hover{
     background-color:rgb(228, 230, 235) ;
@@ -141,11 +145,20 @@ input:focus , select{
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+
+    /* add by molik */
+    clip-path: circle(47.2% at 49% 48%);
+    width: 38%;
+    height: 81%;
  }
  #username{
      font-size: large;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      padding-left: 5%;
+
+     /* add by molik */
+     font-size: 15px;
+     font-weight: 600;
  }
  .btn-cl{
      width: 3em;
@@ -162,13 +175,9 @@ input:focus , select{
     background-color: rgb(211, 213, 218);
 
  }
- #main1{
-   width: 25%;
-   height: 81vh;
-   /* background:chartreuse ; */
- }
+
  #main2{
-     width: 50%;
+    width: 50%;
     height: 81vh;
     /* background: chocolate; */
 }
@@ -178,3 +187,88 @@ input:focus , select{
     /* background: cornflowerblue; */
 }
 
+/* ****************************      LEFT SIDE BAR     ********************************/
+#main1{
+    /* width: 25%; */
+    width: 22%;
+    height: 81vh;
+}
+/* #main1:hover{
+    overflow-y: scroll;
+} */
+/* i.e         ul */
+#inside-main1{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    z-index: 7;
+    font-size: 17px;
+}
+/* i.e insidwe ul       its li */
+.main1-li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 4px;
+}
+.main1-li:hover{
+    cursor: pointer;
+}
+/* all spans under li */
+.li-span{
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+/* for all icons/images in left side bar */
+.left-img{
+    padding-left: 11px;
+    width: 29px;
+    transform: scale(1.2);
+}
+/* for 1st image of left bar i.e for user image like here its elon musk */
+.main-li-img{
+    width: 32px;
+    margin-top: 3px;
+    height: 32px;
+    padding-left: 0px;
+    margin-left: 9px;
+    clip-path: circle(47.2% at 49% 48%);
+}
+.main1-li:hover{
+    background-color: rgb(214, 214, 216);;    
+}
+.ur-shortcuts{
+    width: 80%;
+    font-size: 16px;
+}
+.ur-shortcuts h3{
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: -2px;
+}
+.ur-shortcuts-inside{
+    font-size: 14px;
+    padding-left: 12px;
+}
+.ur-shortcuts-inside li{
+    display: inline;
+}
+.ur-shortcuts-inside li a , .ur-shortcuts-inside li span{
+    text-decoration: none;
+    color: grey;
+}
+.ur-shortcuts-inside li a:hover{
+    text-decoration: underline;
+}
