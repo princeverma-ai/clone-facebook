@@ -177,10 +177,11 @@ input:focus , select{
  }
  #main2{
     width: 50%;
-    height: 81vh;
+    /* height: 81vh; */
     background: chocolate;
     position: relative;
-    left:22%;
+    left:23%;
+    
     
 }
 #main3{
@@ -265,6 +266,7 @@ input:focus , select{
     font-weight: 600;
     font-family: monospace;
     letter-spacing: -2px;
+    width: 100%;
 }
 .ur-shortcuts-inside{
     font-size: 14px;
