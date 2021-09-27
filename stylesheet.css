@@ -175,16 +175,21 @@ input:focus , select{
     background-color: rgb(211, 213, 218);
 
  }
-
  #main2{
     width: 50%;
     height: 81vh;
-    /* background: chocolate; */
+    background: chocolate;
+    position: relative;
+    left:22%;
+    
 }
 #main3{
     width: 25%;
     height: 81vh;
-    /* background: cornflowerblue; */
+    background: cornflowerblue;
+    position: fixed;
+    left: 74%;
+
 }
 
 /* ****************************      LEFT SIDE BAR     ********************************/
@@ -192,6 +197,9 @@ input:focus , select{
     /* width: 25%; */
     width: 22%;
     height: 81vh;
+    position: fixed;
+    background-color: rgb(240, 242, 245);
+    z-index: 2
 }
 /* #main1:hover{
     overflow-y: scroll;
@@ -272,3 +280,12 @@ input:focus , select{
 .ur-shortcuts-inside li a:hover{
     text-decoration: underline;
 }
+
+/* NewsFeed styles  */
+
+
+
+
+
+
+/* Newsfeed styles done above */
