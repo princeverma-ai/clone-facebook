@@ -21,9 +21,9 @@ main{
     /* background-color: rgb(255, 0, 0); */
     display: flex;
     align-items: center;
-    width:30%;
+    width:25%;
     justify-content: flex-start;
-    padding-left: 10px;
+    /* padding-left: px; */
 }
 header{
     width: 99vw;
@@ -38,7 +38,7 @@ header{
 .search-div{
     margin-left: 1%;
     height: 65%;
-    width: 60%;
+    width: 70%;
     display: inline-block;
     background-color: rgb(240, 242, 245);
     border-bottom-left-radius: 50px;
@@ -70,7 +70,7 @@ input:focus , select{
     /* background: yellow; */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .nav-item{
     height: 100%;
@@ -285,8 +285,25 @@ input:focus , select{
 
 /* NewsFeed styles  */
 
+#main2{
+    width: 50%;
+    /* height: 81vh; */
+    background: chocolate;
+    position: relative;
+    left:23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
 
+}
+.story-div{
+    background-color: rgb(230, 230, 230);
+    width:80%;
+    height: 25%;
+    /* border-radius: 20px; */
 
+}
 
 
 
