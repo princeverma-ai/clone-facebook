@@ -1,5 +1,5 @@
 main{
-    height: 95vh;
+    
     width: 98vw;
     background-color: rgb(240, 242, 245);
     margin:0 auto;
@@ -294,17 +294,37 @@ input:focus , select{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1%;
+    /* padding-top: 1%; */
+    padding-bottom: 2%;
 
 }
-.story-div{
+.story-div,.upload-div,.room-div,.feed{
+    border-top-right-radius:max(0% + 0px, min(0% + 8px, -999900% + 1.53185e+07px)) 8px;
+    border-bottom-right-radius:max(0% + 0px, min(0% + 8px, -999900% + 1.53185e+07px)) 8px;
+    border-top-left-radius:max(0% + 0px, min(0% + 8px, -999900% + 1.53185e+07px)) 8px;
+    border-bottom-left-radius:max(0% + 0px, min(0% + 8px, -999900% + 1.53185e+07px)) 8px;
+    margin-top: 2%;
     background-color: rgb(230, 230, 230);
     width:80%;
-    height: 25%;
-    /* border-radius: 20px; */
+}
+.story-div{
+    height: 5em;
+
+
+}
+.upload-div{
+    height: 5em;
+   
+   
+}
+
+.room-div{
+    height: 5em;
 
 }
 
+.feed{
+    height: 5em;
 
-
+}
 /* Newsfeed styles done above */
