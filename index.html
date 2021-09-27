@@ -1,177 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook</title>
     <!-- Icon kit -->
-    <script src="https://kit.fontawesome.com/280833cb08.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/280833cb08.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="stylesheet.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="brand-div">
-            <img id="fb-icon"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
-                alt="" />
-            <div class="search-div">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                    <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
-                <input type="text" id="search-in" placeholder="Search Facebook" />
+      <div class="brand-div">
+        <img
+          id="fb-icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
+          alt=""
+        />
+        <div class="search-div">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+          <input type="text" id="search-in" placeholder="Search Facebook" />
+        </div>
+      </div>
+      <div class="nav-div">
+        <div class="nav-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-house-door-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"
+            />
+          </svg>
+        </div>
+        <div class="nav-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            />
+          </svg>
+        </div>
+        <div class="nav-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play-btn-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+            />
+          </svg>
+        </div>
 
-            </div>
+        <div class="nav-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-shop-window"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"
+            />
+          </svg>
         </div>
-        <div class="nav-div">
-            <div class="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
-                </svg>
-            </div>
-            <div class="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                </svg>
-            </div>
-            <div class="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-play-btn-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                </svg>
-            </div>
-
-            <div class="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-shop-window" viewBox="0 0 16 16">
-                    <path
-                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
-                </svg>
-            </div>
-            <div class="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-people-fill" viewBox="0 0 16 16">
-                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                    <path fill-rule="evenodd"
-                        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
-                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-                </svg>
-            </div>
+        <div class="nav-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-people-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
+            />
+            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+          </svg>
         </div>
-        <div class="button-div">
-            <div class="account-div">
-                <div class="dp">
-                    <img id="acc-img"
-                        src="https://www.usnews.com/dims4/USNEWS/f45ea7c/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fd1%2Fd8%2F8501ba714a21aed9a7327e02ade1%2F180515-10thingselonmusk-editorial.jpg"
-                        alt="" /><span id="username">Elon Musk</span>
-                </div>
-            </div>
-            <div class="btn-div"><button class="btn-cl"><img
-                        src="https://img.icons8.com/ios-glyphs/24/000000/circled-menu.png" /></button></div>
-            <div class="btn-div"><button class="btn-cl"><img
-                        src="https://img.icons8.com/material-rounded/24/000000/facebook-messenger--v1.png" /></button>
-            </div>
-            <div class="btn-div"><button class="btn-cl"><img
-                        src="https://img.icons8.com/material-rounded/24/000000/appointment-reminders.png" /></button>
-            </div>
-            <div class="btn-div"><button class="btn-cl"><img
-                        src="https://img.icons8.com/ios-glyphs/30/000000/sort-down.png" /></button></div>
+      </div>
+      <div class="button-div">
+        <div class="account-div">
+          <div class="dp">
+            <img
+              id="acc-img"
+              src="https://www.usnews.com/dims4/USNEWS/f45ea7c/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fd1%2Fd8%2F8501ba714a21aed9a7327e02ade1%2F180515-10thingselonmusk-editorial.jpg"
+              alt=""
+            /><span id="username">Elon Musk</span>
+          </div>
         </div>
+        <div class="btn-div">
+          <button class="btn-cl">
+            <img
+              src="https://img.icons8.com/ios-glyphs/24/000000/circled-menu.png"
+            />
+          </button>
+        </div>
+        <div class="btn-div">
+          <button class="btn-cl">
+            <img
+              src="https://img.icons8.com/material-rounded/24/000000/facebook-messenger--v1.png"
+            />
+          </button>
+        </div>
+        <div class="btn-div">
+          <button class="btn-cl">
+            <img
+              src="https://img.icons8.com/material-rounded/24/000000/appointment-reminders.png"
+            />
+          </button>
+        </div>
+        <div class="btn-div">
+          <button class="btn-cl">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/000000/sort-down.png"
+            />
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
+      <!-- left side bar ---------------------------------------------  -->
+      <div id="main1">
+        <ul id="inside-main1">
+          <li class="main1-li">
+            <img
+              class="main-li-img"
+              src="https://www.usnews.com/dims4/USNEWS/f45ea7c/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fd1%2Fd8%2F8501ba714a21aed9a7327e02ade1%2F180515-10thingselonmusk-editorial.jpg"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Elon Musk</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Friends</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Groups</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/D2y-jJ2C_hO.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Marketplace</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Watch</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/he-BkogidIc.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Memories</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/lVijPkTeN-r.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Saved</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kyCAf2jbZvF.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Pages</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/8wTx0Eu2vRq.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Events</span></a>
+          </li>
+          <li class="main1-li">
+            <img
+              class="left-img"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/DO-SN-shaZL.png"
+              alt=""
+            />
+            <a class="li-span" href="#"><span>Jobs</span></a>
+          </li>
+        </ul>
+        <hr style="margin-bottom: 15px" />
+        <div class="ur-shortcuts">
+          <h3>Your Shortcuts</h3>
+          <ul class="ur-shortcuts-inside" style="list-style-type: disc">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">·Terms</a></li>
+            <li><a href="#">·Advertising</a></li>
+            <li><a href="#">·Ad Choices</a></li>
+            <li><a href="#">·Cookies</a></li>
+            <li><a href="#">·More</a></li>
+            <li><span>· Facebook © 2021</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- left nav bar done here ------------------------------------------------>
 
-
-        <!-- left side bar ---------------------------------------------  -->
-        <div id="main1">
-            <ul id="inside-main1">
-                <li class="main1-li">
-                    <img class="main-li-img"
-                        src="https://www.usnews.com/dims4/USNEWS/f45ea7c/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fd1%2Fd8%2F8501ba714a21aed9a7327e02ade1%2F180515-10thingselonmusk-editorial.jpg"
-                        alt="">
-                    <a class="li-span" href="#"><span>Elon Musk</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png" alt="">
-                    <a class="li-span" href="#"><span>Friends</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png" alt="">
-                    <a class="li-span" href="#"><span>Groups</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/D2y-jJ2C_hO.png" alt="">
-                    <a class="li-span" href="#"><span>Marketplace</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png" alt="">
-                    <a class="li-span" href="#"><span>Watch</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/he-BkogidIc.png" alt="">
-                    <a class="li-span" href="#"><span>Memories</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/lVijPkTeN-r.png" alt="">
-                    <a class="li-span" href="#"><span>Saved</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kyCAf2jbZvF.png" alt="">
-                    <a class="li-span" href="#"><span>Pages</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/8wTx0Eu2vRq.png" alt="">
-                    <a class="li-span" href="#"><span>Events</span></a>
-                </li>
-                <li class="main1-li">
-                    <img class="left-img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/DO-SN-shaZL.png" alt="">
-                    <a class="li-span" href="#"><span>Jobs</span></a>
-                </li>
-            </ul>
-            <hr style="margin-bottom: 15px;">
-            <div class="ur-shortcuts">
-                <h3>Your Shortcuts</h3>
-                <ul class="ur-shortcuts-inside" style="list-style-type: disc;">
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">·Terms</a></li>
-                    <li><a href="#">·Advertising</a></li>
-                    <li><a href="#">·Ad  Choices</a></li>
-                    <li><a href="#">·Cookies</a></li>
-                    <li><a href="#">·More</a></li>
-                    <li><span>· Facebook © 2021</span></li>
-                </ul>
+      <!-- Main Newsfeed -->
+      <div id="main2">
+        <div class="story-div">
+          <ul class="story-list">
+            <li class="story-li" id="my-story-li">
+              <div class="my-story-img"></div>
+              <div class="my-story-action">
+                <button id="create-story-btn"></button>
+                <span id="create-story">Create Story</span>
+              </div>
+            </li>
+            <li class="story-li">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="story-img"
+              />
+              <div class="story-con">
+                <img
+                  src="https://source.unsplash.com/featured/?{portrait},{girl}"
+                  alt=""
+                  class="user-img"
+                />
+                <span class="story-name">Elon Musk</span>
+              </div>
+            </li>
+            <li class="story-li">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="story-img"
+              />
+              <div class="story-con">
+                <img
+                  src="https://source.unsplash.com/featured/?{portrait},{girl}"
+                  alt=""
+                  class="user-img"
+                />
+                <span class="story-name">Elon Musk</span>
+              </div>
+            </li>
+            <li class="story-li">
+              <img
+                src="https://source.unsplash.com/random"
+                id="las"
+                alt=""
+                class="story-img"
+              />
+              <div class="story-con">
+                <img
+                  src="https://source.unsplash.com/featured/?{portrait},{girl}"
+                  alt=""
+                  class="user-img"
+                />
+                <span class="story-name">Elon Musk</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="upload-div">
+          <div class="u-div1">
+            <img
+              src="https://www.usnews.com/dims4/USNEWS/f45ea7c/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fd1%2Fd8%2F8501ba714a21aed9a7327e02ade1%2F180515-10thingselonmusk-editorial.jpg"
+              alt=""
+              class="uimage"
+            />
+            <div class="u-input">
+              <input
+                type="text"
+                class="feeling"
+                placeholder="What's on your mind, Elon?"
+              />
             </div>
+          </div>
+          <hr />
+          <div class="u-div2">
+            <div class="uaction">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/fa314a/live-video-on--v1.png"
+                alt=""
+                class="uicon"
+              /><span class="uspan">Live Video</span>
+            </div>
+            <div class="uaction">
+              <img
+                src="https://img.icons8.com/ios/50/26e07f/stack-of-photos--v1.png"
+                alt=""
+                class="uicon u-photo-icon"
+              /><span class="uspan">Photo/Video</span>
+            </div>
+            <div class="uaction">
+              <img
+                src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/26e07f/external-emoji-emoji-justicon-lineal-color-justicon-3.png"
+                alt=""
+                class="uicon"
+                id="u-ph"
+              /><span class="uspan">Feeling/Activity</span>
+            </div>
+          </div>
         </div>
-        <!-- left nav bar done here ------------------------------------------------>
-
-
-
-        <!-- Main Newsfeed -->
-        <div id="main2">
-            <div class="story-div"><h1>story</h1></div>
-            <div class="upload-div"><h1>upload</h1></div>
-            <div class="room-div"><h1>rooms</h1></div>
-            <div class="feed"></div>
-            <div class="feed"></div>
-            <div class="feed"></div>
-            <div class="feed"></div>
-            <div class="feed"></div>
-            <div class="feed"></div>
-            <div class="feed"></div>
-            <div class="feed"></div>
+        <div class="room-div">
+          <div class="create-btn-div">
+            <button class="create-btn">
+              <i
+                data-visualcompletion="css-img"
+                class="hu5pjgll"
+                style="
+                  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/oDS5E9id3Nl.png');
+                  background-position: 0 -220px;
+                  background-size: 502px 246px;
+                  width: 24px;
+                  height: 24px;
+                  background-repeat: no-repeat;
+                  display: inline-block;
+                "
+              ></i
+              ><span id="create-room">Create Room</span>
+            </button>
+          </div>
+          <ul class="suggestions">
+            <li class="room-li">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="room-img"
+              />
+            </li>
+            <li class="room-li">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="room-img"
+              />
+            </li>
+            <li class="room-li">
+              <img
+                src="https://source.unsplash.com/random"
+                alt=""
+                class="room-img"
+              />
+            </li>
+          </ul>
         </div>
-        <!-- Newsfeed done above -->
+     
 
-        <div id="main3"></div>
+        <!-- feed-------------------- -->
+        <div class="feed">
+          <div class="header">
+            <div class="head-icon"><img class="action-img" src="https://source.unsplash.com/1600x900/?nature,water
+                " alt="" class="head-img"></div>
+            <div class="head-data">
+              <span class="head-name">Prince</span>
+              <div class="sub-head">
+                <span class="time"></span><img src="" alt="" class="globe" />
+              </div>
+            </div>
+            <div class="more-actions"><img src="https://img.icons8.com/material-sharp/24/000000/more.png"/></div>
+          </div>
+          <hr />
+          <img
+            src="https://source.unsplash.com/random"
+            alt=""
+            class="feed-img"
+          />
+          <div class="stat-data"></div>
+          <hr />
+          <div class="feed-action"></div>
+          <div class="comments"></div>
+        </div>
+      </div>
+      <!-- Newsfeed done above -->
+
+      <div id="main3"></div>
     </main>
-</body>
-
+  </body>
 </html>
