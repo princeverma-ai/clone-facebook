@@ -199,6 +199,7 @@ select {
   /* background: cornflowerblue; */
   position: fixed;
   left: 74%;
+ 
 }
 
 /* ****************************      LEFT SIDE BAR     ********************************/
@@ -209,6 +210,7 @@ select {
   position: fixed;
   background-color: rgb(240, 242, 245);
   z-index: 2;
+
 }
 /* #main1:hover{
     overflow-y: scroll;
@@ -328,7 +330,7 @@ select {
     8px;
   margin-top: 2%;
   background-color: white;
-  width: 80%;
+  width: 90%;
 }
 /* ..... */
 .story-div {
@@ -346,6 +348,8 @@ select {
   justify-content: space-evenly;
 }
 .story-li {
+  /* bt molik */
+  position: relative;
   width: 20%;
   height: 100%;
   background-color: rgb(0, 0, 0);
@@ -415,7 +419,7 @@ select {
 }
 .story-img {
   position: absolute;
-  width: 16%;
+  /* width: 16%;   wrong here */
   height: 12rem;
   background-size: cover;
   background-position: center;
@@ -423,6 +427,10 @@ select {
   opacity: 0.6;
   border-radius: 10px;
   /* z-index: -2; */
+  /* trial by molik */
+  width: 100%;
+  /* width: 6.6em; */
+
 }
 .user-img {
   position: relative;
@@ -526,6 +534,10 @@ select {
   justify-content: center;
   cursor: pointer;
 }
+.u-input:hover{
+  border:#4287f5 1px solid ;
+  box-shadow: 0px 0px 5px -2px #4287f5;
+}
 .feeling {
   position: relative;
   width: 95%;
@@ -554,6 +566,7 @@ select {
   justify-content: space-evenly;
   align-items: center;
   transition: 200ms ease-out;
+  
 }
 .uaction:hover{
   transform: scale(1.1);
@@ -876,6 +889,7 @@ hr {
   left: 74%;
   /* by molik */
   height: 100vh;
+  left: 73%;
   /* till there */
 }
 #main3:hover {
@@ -917,7 +931,7 @@ hr {
 }
 .three-dots {
   position: relative;
-  left: 95px;
+  left: 21.5%;
   height: 34px;
   border-radius: 58%;
   width: 35px;
@@ -966,7 +980,7 @@ hr {
 }
 .frnd-info-1 span {
   position: relative;
-  left: 13px;
+  left: -8%;
   font-size: 14px;
 }
 
@@ -1044,7 +1058,7 @@ hr {
 .inside-contact-top1 {
   display: flex;
   width: 248px;
-  padding-left: 96px;
+  padding-left: 31%;
 }
 .inside-contact-top1 div {
   border-radius: 50%;
@@ -1106,7 +1120,8 @@ svg:hover {
   margin-bottom: 13px;
   margin-top: 22px;
   border: 1px solid rgb(219, 219, 219);
-  width: 315px;
+  /* width: 315px; */
+  width: 99%;
   margin-left: 16px;
 }
 #main1{
@@ -1146,5 +1161,227 @@ svg:hover {
   100%{
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* Responsive with Fixing story vala bug  by molik*/
+
+/* lol nice documentation ~prince**/
+
+@media screen and (max-width:1200px){
+  #main1{
+    display: none;
+  }  
+  #main2{
+    position: relative;
+    left: 20px;
+    width: 67%;
+  }
+  #main3{
+    width: 30%;
+    left: 67%;
+  }
+  .story-div{
+    width: 95%;
+  }
+  #search-in{
+    display: none;
+  }
+  .search-div{
+    width: 3em;
+    height: 3em;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand-div{
+    width: 15%;
+    justify-content:center ;
+  }
+  .button-div{
+    justify-content: space-evenly;
+    width: 35%;
+  }
+  .account-div{
+    width: 30%;
+  }
+  .nav-div{
+    width: 50%;
+  }
+}
+@media screen and (max-width:1120px){
+  #frnd-info-3-btn1 , #frnd-info-3-btn2{
+    padding: 9px 18px;
+  }
+  
+}
+@media screen and (max-width:1000px){
+  #frnd-info-3-btn2{
+    padding: 9px 14px;
+  }
+  #frnd-info-3-btn1{
+    padding: 9px 12px;
+  } 
+  .three-dots{
+    left: 18%;
+  }
+  #main3{
+    left: 66%;
+  }
+ 
+}
+@media screen and (max-width:920px){
+  #main3{
+    display: none;
+  }
+  
+  #main2{
+    width: 90%;
+    left: 5%;
+    /* margin: 0 auto; */
+  }
+  .uaction{
+    font-size: 0.7em;
+  }
+  .uicon{
+    width: 3em;
+    height: 3em;
+  }
+  .create-btn-div{
+    width: 40%;
+  }
+  .suggestions{
+    justify-content: space-evenly;
+  }
+  #create-room{
+    font-size: 1em;
+  }
+  .story-div{
+    width: 100%;
+  }
+  .button-div{
+    display: none;
+  }
+  header{
+    justify-content: flex-start;
+  }
+  .brand-div{
+    width: 20%;
+  }
+  .nav-div{
+    width: 60%;
+  }
+  .comment-data{
+    width: 50%;
+  }
+  
+}
+
+/**Responsiveness Overloaded---------*/
+.story-list{
+  flex-shrink: 1;
+}
+.story-li{
+  flex-shrink: 2;
+}
+.u-div1{
+  flex-shrink: 1;
+
+}
+.u-div2{
+  flex-shrink: 1;
+
+}
+@media (max-width:450px){
+  
+  main{
+    margin: 0;
+  }
+  #main2{
+    width: 100%;
+    left: 0;
+  }
+  .story-div{
+    height: 10em;
+  }
+  .story-li{
+    width: 24%;
+  }
+  #las{
+    height: 100%;
+  }
+  .story-img{
+    height: 100%;
+  }
+  .uicon{
+    width: 2.5em;
+    height: 2.5em;
+  }
+  #create-room{
+    font-size: 0.8em;
+  }
+  .create-btn-div{
+    width: 40%;
+  }
+  .suggestions{
+    justify-content: space-evenly;
+  }
+  .head-icon{
+    width: 18%;
+  }
+  .comment-data{
+    width: 70%;
+  }
+  .comments{
+    justify-content: space-evenly;
+  }
+  header{
+    justify-content: space-evenly;
+  }
+  .nav-div{
+    width: 70%;
+  }
+  .feed{
+    height: 35em;
+  }
+  .room-li{
+    width: 20%;
+  }
+}
+
+@media (max-width:380px){
+  .search-div{
+    height: 2em;
+    width: 2em;
+  }
+  #create-story{
+    font-size: 0.6em;
+  }
+  .story-name{
+    font-size: 0.6em;
+
+  }
+  .feeling{
+    font-size: 0.8em;
+
+  }
+  .uspan{
+    font-size: 0.8em;
+
+  }
+  #create-room{
+    font-size: 0.6em;
+
+  }
+  .action-text{
+    font-size: 0.8em;
+
+  }
+  .feed-action{
+    justify-content: space-evenly;
+  }
+  .work-img{
+    width: 1em;
+    height: 1em;
   }
 }
