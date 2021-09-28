@@ -337,6 +337,59 @@ select {
   border-radius: 10px;
   /* border: 2px solid black; */
   cursor: pointer;
+  /* animation: story-li 1s   1s   ease-in-out; */
+  transition: 100ms;
+}
+.story-li:nth-of-type(1){
+  animation: story-li-1 600ms   300ms   ease-out;
+}
+.story-li:nth-of-type(2){
+  animation: story-li-2 600ms   400ms   ease-out;
+}
+.story-li:nth-of-type(3){
+  animation: story-li-3 600ms   500ms   ease-out;
+}
+.story-li:nth-of-type(4){
+  animation: story-li-4 600ms   600ms   ease-out;
+}
+@keyframes story-li-1 {
+  50%{
+      transform: translateY(-20px) ;
+  }
+  100%{
+    
+    transform: translateY(0px) ;
+}
+}
+@keyframes story-li-2 {
+  50%{
+      transform: translateY(-20px) ;
+  }
+  100%{
+    
+    transform: translateY(0px) ;
+}
+}
+@keyframes story-li-3 {
+  50%{
+      transform: translateY(-20px) ;
+  }
+  100%{
+    
+    transform: translateY(0px) ;
+}
+}
+@keyframes story-li-4 {
+  50%{
+      transform: translateY(-20px) ;
+  }
+  100%{
+    
+    transform: translateY(0px) ;
+}
+}
+.story-li:hover{
+    transform: scale(1.05) translateY(-10px);
 }
 .story-con {
   height: 100%;
@@ -1016,4 +1069,43 @@ svg:hover {
   border: 1px solid rgb(219, 219, 219);
   width: 315px;
   margin-left: 16px;
+}
+#main1{
+  animation: main1 400ms ease-out 50ms  forwards;
+}
+@keyframes main1 {
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#main3{
+  animation: main3 400ms ease-out 50ms  forwards;
+}
+@keyframes main3 {
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#main2{
+  animation: main2 400ms ease-out 50ms  forwards;
+}
+@keyframes main2 {
+  0%{
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
